@@ -89,7 +89,7 @@ public class BookBorrowOrderDetailController {
 	@RequestMapping(value = "/auth/bookborroworderdetails/{bookBorrowOrderDetailId}", method = RequestMethod.PUT)
 	public GeneralResult updateBookBorrowOrderDetail(
 			@PathVariable("bookBorrowOrderDetailId") String bookBorrowOrderDetailId,
-			@RequestBody BookBorrowOrderReqBody bookBorrowOrderDetailReqBody) {
+			@RequestBody BookBorrowOrderDetailReqBody bookBorrowOrderDetailReqBody) {
 		GeneralResult result = bookBorrowOrderDetailService
 				.updateBookBorrowOrderDetail(bookBorrowOrderDetailId,
 						bookBorrowOrderDetailReqBody);

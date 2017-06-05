@@ -35,7 +35,7 @@ public interface BookBorrowOrderDetailService {
 			BookBorrowOrderDetailReqParam bookBorrowOrderDetailReqParam);
 
 	GeneralResult updateBookBorrowOrderDetail(String bookBorrowOrderDetailId,
-			BookBorrowOrderReqBody bookBorrowOrderDetailReqBody);
+			BookBorrowOrderDetailReqBody bookBorrowOrderDetailReqBody);
 
 	GeneralContentResult<String> createBookBorrowOrderDetail(
 			BookBorrowOrderDetailReqBody bookBorrowOrderDetailReqBody);
