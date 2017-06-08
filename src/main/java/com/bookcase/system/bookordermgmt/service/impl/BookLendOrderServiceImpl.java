@@ -23,7 +23,6 @@ import com.bookcase.system.bookordermgmt.domain.OrderdataBookborrowOrder;
 import com.bookcase.system.bookordermgmt.domain.OrderdataBooklendOrder;
 import com.bookcase.system.bookordermgmt.dto.booklendorder.BookLendOrderReqBody;
 import com.bookcase.system.bookordermgmt.dto.booklendorder.BookLendOrderReqParam;
-import com.bookcase.system.bookordermgmt.otd.bookborroworder.BookLendOrderRspBody;
 import com.bookcase.system.bookordermgmt.otd.booklendorder.BookLendOrderRspBody;
 import com.bookcase.system.bookordermgmt.repository.OrderdataBooklendOrderRepository;
 import com.bookcase.system.bookordermgmt.service.BookLendOrderService;
