@@ -13,6 +13,7 @@ import java.io.Serializable;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -34,7 +35,7 @@ import com.bookcase.system.bookordermgmt.domain.OrderdataBookborrowOrder;
 public interface OrderdataBookborrowOrderRepository extends JpaRepository<OrderdataBookborrowOrder, String>{
 
 	@Query("SELECT a FROM OrderdataBookborrowOrder a where a.status<" + BookOrderdataMgmtConstant.STATUS_GLOBAL_DELETED)
-	Page<OrderdataBookborrowOrder> findBookBorrowOrders(PageRequest request);
+	Page<OrderdataBookborrowOrder> findBookBorrowOrders(Pageable pageable);
 
 	@Query("SELECT a FROM OrderdataBookborrowOrder a where a.id = ?1 AND a.status<" + BookOrderdataMgmtConstant.STATUS_GLOBAL_DELETED)
 	OrderdataBookborrowOrder findBookBorrowOrderById(String bookBorrowOrderId);
